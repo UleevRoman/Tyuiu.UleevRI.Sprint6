@@ -29,9 +29,9 @@ namespace Tyuiu.UleevRI.Sprint6.Task2.V3
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.groupBoxInputData_URI = new System.Windows.Forms.GroupBox();
             this.labelStop_URI = new System.Windows.Forms.Label();
             this.labelStart_URI = new System.Windows.Forms.Label();
@@ -40,18 +40,18 @@ namespace Tyuiu.UleevRI.Sprint6.Task2.V3
             this.groupBoxCondition_URI = new System.Windows.Forms.GroupBox();
             this.textBoxCondition_URI = new System.Windows.Forms.TextBox();
             this.groupBoxResult_URI = new System.Windows.Forms.GroupBox();
-            this.dataGridViewFunction = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.buttonHelp = new System.Windows.Forms.Button();
-            this.buttonDone_URI = new System.Windows.Forms.Button();
+            this.chartFunction_URI = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.dataGridViewFunction_URI = new System.Windows.Forms.DataGridView();
             this.X = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.VarX = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.chartFunction = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.labelResult_URI = new System.Windows.Forms.Label();
+            this.buttonHelp_URI = new System.Windows.Forms.Button();
+            this.buttonDone_URI = new System.Windows.Forms.Button();
             this.groupBoxInputData_URI.SuspendLayout();
             this.groupBoxCondition_URI.SuspendLayout();
             this.groupBoxResult_URI.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFunction)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chartFunction)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartFunction_URI)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFunction_URI)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBoxInputData_URI
@@ -125,9 +125,9 @@ namespace Tyuiu.UleevRI.Sprint6.Task2.V3
             // 
             // groupBoxResult_URI
             // 
-            this.groupBoxResult_URI.Controls.Add(this.chartFunction);
-            this.groupBoxResult_URI.Controls.Add(this.dataGridViewFunction);
-            this.groupBoxResult_URI.Controls.Add(this.label1);
+            this.groupBoxResult_URI.Controls.Add(this.chartFunction_URI);
+            this.groupBoxResult_URI.Controls.Add(this.dataGridViewFunction_URI);
+            this.groupBoxResult_URI.Controls.Add(this.labelResult_URI);
             this.groupBoxResult_URI.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.groupBoxResult_URI.Location = new System.Drawing.Point(473, 24);
             this.groupBoxResult_URI.Name = "groupBoxResult_URI";
@@ -136,40 +136,73 @@ namespace Tyuiu.UleevRI.Sprint6.Task2.V3
             this.groupBoxResult_URI.TabStop = false;
             this.groupBoxResult_URI.Text = "Вывод данных";
             // 
-            // dataGridViewFunction
+            // chartFunction_URI
             // 
-            this.dataGridViewFunction.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewFunction.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            chartArea2.Name = "ChartArea1";
+            this.chartFunction_URI.ChartAreas.Add(chartArea2);
+            legend2.Enabled = false;
+            legend2.Name = "Legend1";
+            this.chartFunction_URI.Legends.Add(legend2);
+            this.chartFunction_URI.Location = new System.Drawing.Point(183, 46);
+            this.chartFunction_URI.Name = "chartFunction_URI";
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series2.IsVisibleInLegend = false;
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chartFunction_URI.Series.Add(series2);
+            this.chartFunction_URI.Size = new System.Drawing.Size(377, 360);
+            this.chartFunction_URI.TabIndex = 2;
+            this.chartFunction_URI.Text = "chart1";
+            // 
+            // dataGridViewFunction_URI
+            // 
+            this.dataGridViewFunction_URI.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewFunction_URI.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.X,
             this.VarX});
-            this.dataGridViewFunction.Location = new System.Drawing.Point(10, 46);
-            this.dataGridViewFunction.Name = "dataGridViewFunction";
-            this.dataGridViewFunction.RowHeadersVisible = false;
-            this.dataGridViewFunction.RowHeadersWidth = 51;
-            this.dataGridViewFunction.RowTemplate.Height = 24;
-            this.dataGridViewFunction.Size = new System.Drawing.Size(167, 360);
-            this.dataGridViewFunction.TabIndex = 1;
+            this.dataGridViewFunction_URI.Location = new System.Drawing.Point(10, 46);
+            this.dataGridViewFunction_URI.Name = "dataGridViewFunction_URI";
+            this.dataGridViewFunction_URI.RowHeadersVisible = false;
+            this.dataGridViewFunction_URI.RowHeadersWidth = 51;
+            this.dataGridViewFunction_URI.RowTemplate.Height = 24;
+            this.dataGridViewFunction_URI.Size = new System.Drawing.Size(167, 360);
+            this.dataGridViewFunction_URI.TabIndex = 1;
             // 
-            // label1
+            // X
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(7, 24);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(84, 18);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Результат:";
+            this.X.HeaderText = "X";
+            this.X.MinimumWidth = 6;
+            this.X.Name = "X";
+            this.X.Width = 50;
             // 
-            // buttonHelp
+            // VarX
             // 
-            this.buttonHelp.BackColor = System.Drawing.Color.Fuchsia;
-            this.buttonHelp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonHelp.Location = new System.Drawing.Point(262, 356);
-            this.buttonHelp.Name = "buttonHelp";
-            this.buttonHelp.Size = new System.Drawing.Size(86, 80);
-            this.buttonHelp.TabIndex = 3;
-            this.buttonHelp.Text = "Справка";
-            this.buttonHelp.UseVisualStyleBackColor = false;
-            this.buttonHelp.Click += new System.EventHandler(this.buttonHelp_Click);
+            this.VarX.HeaderText = "F(X)";
+            this.VarX.MinimumWidth = 6;
+            this.VarX.Name = "VarX";
+            this.VarX.Width = 50;
+            // 
+            // labelResult_URI
+            // 
+            this.labelResult_URI.AutoSize = true;
+            this.labelResult_URI.Location = new System.Drawing.Point(7, 24);
+            this.labelResult_URI.Name = "labelResult_URI";
+            this.labelResult_URI.Size = new System.Drawing.Size(84, 18);
+            this.labelResult_URI.TabIndex = 0;
+            this.labelResult_URI.Text = "Результат:";
+            // 
+            // buttonHelp_URI
+            // 
+            this.buttonHelp_URI.BackColor = System.Drawing.Color.Fuchsia;
+            this.buttonHelp_URI.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonHelp_URI.Location = new System.Drawing.Point(262, 356);
+            this.buttonHelp_URI.Name = "buttonHelp_URI";
+            this.buttonHelp_URI.Size = new System.Drawing.Size(86, 80);
+            this.buttonHelp_URI.TabIndex = 3;
+            this.buttonHelp_URI.Text = "Справка";
+            this.buttonHelp_URI.UseVisualStyleBackColor = false;
+            this.buttonHelp_URI.Click += new System.EventHandler(this.buttonHelp_Click);
             // 
             // buttonDone_URI
             // 
@@ -186,44 +219,13 @@ namespace Tyuiu.UleevRI.Sprint6.Task2.V3
             this.buttonDone_URI.MouseEnter += new System.EventHandler(this.buttonDone_URI_MouseEnter);
             this.buttonDone_URI.MouseLeave += new System.EventHandler(this.buttonDone_URI_MouseLeave);
             // 
-            // X
-            // 
-            this.X.HeaderText = "X";
-            this.X.Name = "X";
-            this.X.Width = 50;
-            // 
-            // VarX
-            // 
-            this.VarX.HeaderText = "F(X)";
-            this.VarX.Name = "VarX";
-            this.VarX.Width = 50;
-            // 
-            // chartFunction
-            // 
-            chartArea4.Name = "ChartArea1";
-            this.chartFunction.ChartAreas.Add(chartArea4);
-            legend4.Enabled = false;
-            legend4.Name = "Legend1";
-            this.chartFunction.Legends.Add(legend4);
-            this.chartFunction.Location = new System.Drawing.Point(183, 46);
-            this.chartFunction.Name = "chartFunction";
-            series4.ChartArea = "ChartArea1";
-            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series4.IsVisibleInLegend = false;
-            series4.Legend = "Legend1";
-            series4.Name = "Series1";
-            this.chartFunction.Series.Add(series4);
-            this.chartFunction.Size = new System.Drawing.Size(377, 360);
-            this.chartFunction.TabIndex = 2;
-            this.chartFunction.Text = "chart1";
-            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1065, 450);
             this.Controls.Add(this.buttonDone_URI);
-            this.Controls.Add(this.buttonHelp);
+            this.Controls.Add(this.buttonHelp_URI);
             this.Controls.Add(this.groupBoxResult_URI);
             this.Controls.Add(this.groupBoxCondition_URI);
             this.Controls.Add(this.groupBoxInputData_URI);
@@ -236,8 +238,8 @@ namespace Tyuiu.UleevRI.Sprint6.Task2.V3
             this.groupBoxCondition_URI.PerformLayout();
             this.groupBoxResult_URI.ResumeLayout(false);
             this.groupBoxResult_URI.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFunction)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chartFunction)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartFunction_URI)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFunction_URI)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -252,13 +254,13 @@ namespace Tyuiu.UleevRI.Sprint6.Task2.V3
         private System.Windows.Forms.GroupBox groupBoxCondition_URI;
         private System.Windows.Forms.TextBox textBoxCondition_URI;
         private System.Windows.Forms.GroupBox groupBoxResult_URI;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button buttonHelp;
+        private System.Windows.Forms.Label labelResult_URI;
+        private System.Windows.Forms.Button buttonHelp_URI;
         private System.Windows.Forms.Button buttonDone_URI;
-        private System.Windows.Forms.DataGridView dataGridViewFunction;
+        private System.Windows.Forms.DataGridView dataGridViewFunction_URI;
         private System.Windows.Forms.DataGridViewTextBoxColumn X;
         private System.Windows.Forms.DataGridViewTextBoxColumn VarX;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chartFunction;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartFunction_URI;
     }
 }
 

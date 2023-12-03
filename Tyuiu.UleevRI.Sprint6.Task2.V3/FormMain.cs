@@ -27,13 +27,13 @@ namespace Tyuiu.UleevRI.Sprint6.Task2.V3
                 int l = ds.GetMassFunction(startValue, stopValue).Length;
                 double[] num = new double[l];
                 num = ds.GetMassFunction(startValue, stopValue);
-                this.chartFunction.Titles.Add("График функции F(x)");
-                this.chartFunction.ChartAreas[0].AxisX.Title = "Ось X";
-                this.chartFunction.ChartAreas[0].AxisY.Title = "Ось Y";
+                this.chartFunction_URI.Titles.Add("График функции F(x)");
+                this.chartFunction_URI.ChartAreas[0].AxisX.Title = "Ось X";
+                this.chartFunction_URI.ChartAreas[0].AxisY.Title = "Ось Y";
                 for (int i = 0; i <= l - 1; i++)
                 {
-                    this.dataGridViewFunction.Rows.Add(Convert.ToString(startValue), Convert.ToString(num[i]));
-                    this.chartFunction.Series[0].Points.AddXY(startValue, num[i]);
+                    this.dataGridViewFunction_URI.Rows.Add(Convert.ToString(startValue), Convert.ToString(num[i]));
+                    this.chartFunction_URI.Series[0].Points.AddXY(startValue, num[i]);
                     startValue++;
                 }
             }
