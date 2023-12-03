@@ -29,7 +29,7 @@ namespace Tyuiu.UleevRI.Sprint6.Task1.V29
             try
             {
                 int startValue = Convert.ToInt32(textBoxVarStart_URI.Text);
-                int stopValue = Convert.ToInt32(textBoxVarStop_URI.Text); ;
+                int stopValue = Convert.ToInt32(textBoxVarStop_URI.Text);
                 string str;
                 int l = ds.GetMassFunction(startValue, stopValue).Length;
                 double[] num = new double[l];
