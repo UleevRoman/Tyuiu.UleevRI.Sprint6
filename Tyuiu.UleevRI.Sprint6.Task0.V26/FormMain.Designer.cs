@@ -39,8 +39,8 @@ namespace Tyuiu.UleevRI.Sprint6.Task0.V26
             this.labelResult_URI = new System.Windows.Forms.Label();
             this.textBoxResult = new System.Windows.Forms.TextBox();
             this.groupBoxCondition_URI = new System.Windows.Forms.GroupBox();
-            this.textBoxCondition_URI = new System.Windows.Forms.TextBox();
             this.pictureBoxFormula = new System.Windows.Forms.PictureBox();
+            this.textBoxCondition_URI = new System.Windows.Forms.TextBox();
             this.groupBoxInputData_URI.SuspendLayout();
             this.groupBoxPrintData_URI.SuspendLayout();
             this.groupBoxCondition_URI.SuspendLayout();
@@ -72,9 +72,10 @@ namespace Tyuiu.UleevRI.Sprint6.Task0.V26
             // 
             this.groupBoxInputData_URI.Controls.Add(this.labelVarX_URI);
             this.groupBoxInputData_URI.Controls.Add(this.textBoxVarX_URI);
+            this.groupBoxInputData_URI.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.groupBoxInputData_URI.Location = new System.Drawing.Point(27, 272);
             this.groupBoxInputData_URI.Name = "groupBoxInputData_URI";
-            this.groupBoxInputData_URI.Size = new System.Drawing.Size(488, 115);
+            this.groupBoxInputData_URI.Size = new System.Drawing.Size(488, 166);
             this.groupBoxInputData_URI.TabIndex = 2;
             this.groupBoxInputData_URI.TabStop = false;
             this.groupBoxInputData_URI.Text = "Ввод данных";
@@ -82,9 +83,9 @@ namespace Tyuiu.UleevRI.Sprint6.Task0.V26
             // labelVarX_URI
             // 
             this.labelVarX_URI.AutoSize = true;
-            this.labelVarX_URI.Location = new System.Drawing.Point(9, 47);
+            this.labelVarX_URI.Location = new System.Drawing.Point(13, 44);
             this.labelVarX_URI.Name = "labelVarX_URI";
-            this.labelVarX_URI.Size = new System.Drawing.Size(108, 17);
+            this.labelVarX_URI.Size = new System.Drawing.Size(135, 20);
             this.labelVarX_URI.TabIndex = 1;
             this.labelVarX_URI.Text = "Переменная X:";
             // 
@@ -92,7 +93,7 @@ namespace Tyuiu.UleevRI.Sprint6.Task0.V26
             // 
             this.textBoxVarX_URI.Location = new System.Drawing.Point(9, 67);
             this.textBoxVarX_URI.Name = "textBoxVarX_URI";
-            this.textBoxVarX_URI.Size = new System.Drawing.Size(108, 22);
+            this.textBoxVarX_URI.Size = new System.Drawing.Size(139, 27);
             this.textBoxVarX_URI.TabIndex = 0;
             this.textBoxVarX_URI.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxVarX_URI_KeyPress);
             // 
@@ -100,6 +101,7 @@ namespace Tyuiu.UleevRI.Sprint6.Task0.V26
             // 
             this.groupBoxPrintData_URI.Controls.Add(this.labelResult_URI);
             this.groupBoxPrintData_URI.Controls.Add(this.textBoxResult);
+            this.groupBoxPrintData_URI.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.groupBoxPrintData_URI.Location = new System.Drawing.Point(544, 272);
             this.groupBoxPrintData_URI.Name = "groupBoxPrintData_URI";
             this.groupBoxPrintData_URI.Size = new System.Drawing.Size(235, 115);
@@ -110,9 +112,9 @@ namespace Tyuiu.UleevRI.Sprint6.Task0.V26
             // labelResult_URI
             // 
             this.labelResult_URI.AutoSize = true;
-            this.labelResult_URI.Location = new System.Drawing.Point(6, 47);
+            this.labelResult_URI.Location = new System.Drawing.Point(20, 44);
             this.labelResult_URI.Name = "labelResult_URI";
-            this.labelResult_URI.Size = new System.Drawing.Size(80, 17);
+            this.labelResult_URI.Size = new System.Drawing.Size(102, 20);
             this.labelResult_URI.TabIndex = 1;
             this.labelResult_URI.Text = "Результат:";
             // 
@@ -121,19 +123,29 @@ namespace Tyuiu.UleevRI.Sprint6.Task0.V26
             this.textBoxResult.Location = new System.Drawing.Point(6, 67);
             this.textBoxResult.Name = "textBoxResult";
             this.textBoxResult.ReadOnly = true;
-            this.textBoxResult.Size = new System.Drawing.Size(80, 22);
+            this.textBoxResult.Size = new System.Drawing.Size(133, 27);
             this.textBoxResult.TabIndex = 0;
             // 
             // groupBoxCondition_URI
             // 
             this.groupBoxCondition_URI.Controls.Add(this.pictureBoxFormula);
             this.groupBoxCondition_URI.Controls.Add(this.textBoxCondition_URI);
+            this.groupBoxCondition_URI.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.groupBoxCondition_URI.Location = new System.Drawing.Point(27, 22);
             this.groupBoxCondition_URI.Name = "groupBoxCondition_URI";
             this.groupBoxCondition_URI.Size = new System.Drawing.Size(752, 244);
             this.groupBoxCondition_URI.TabIndex = 4;
             this.groupBoxCondition_URI.TabStop = false;
             this.groupBoxCondition_URI.Text = "Условие";
+            // 
+            // pictureBoxFormula
+            // 
+            this.pictureBoxFormula.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxFormula.Image")));
+            this.pictureBoxFormula.Location = new System.Drawing.Point(517, 21);
+            this.pictureBoxFormula.Name = "pictureBoxFormula";
+            this.pictureBoxFormula.Size = new System.Drawing.Size(229, 128);
+            this.pictureBoxFormula.TabIndex = 1;
+            this.pictureBoxFormula.TabStop = false;
             // 
             // textBoxCondition_URI
             // 
@@ -145,15 +157,6 @@ namespace Tyuiu.UleevRI.Sprint6.Task0.V26
             this.textBoxCondition_URI.Size = new System.Drawing.Size(479, 204);
             this.textBoxCondition_URI.TabIndex = 0;
             this.textBoxCondition_URI.Text = "Вычислить выражение по формуле";
-            // 
-            // pictureBoxFormula
-            // 
-            this.pictureBoxFormula.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxFormula.Image")));
-            this.pictureBoxFormula.Location = new System.Drawing.Point(517, 21);
-            this.pictureBoxFormula.Name = "pictureBoxFormula";
-            this.pictureBoxFormula.Size = new System.Drawing.Size(229, 128);
-            this.pictureBoxFormula.TabIndex = 1;
-            this.pictureBoxFormula.TabStop = false;
             // 
             // FormMain
             // 
