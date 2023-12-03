@@ -29,9 +29,9 @@ namespace Tyuiu.UleevRI.Sprint6.Task2.V3
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.groupBoxInputData_URI = new System.Windows.Forms.GroupBox();
             this.labelStop_URI = new System.Windows.Forms.Label();
             this.labelStart_URI = new System.Windows.Forms.Label();
@@ -138,20 +138,20 @@ namespace Tyuiu.UleevRI.Sprint6.Task2.V3
             // 
             // chartFunction_URI
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chartFunction_URI.ChartAreas.Add(chartArea2);
-            legend2.Enabled = false;
-            legend2.Name = "Legend1";
-            this.chartFunction_URI.Legends.Add(legend2);
-            this.chartFunction_URI.Location = new System.Drawing.Point(183, 46);
+            chartArea1.Name = "ChartArea1";
+            this.chartFunction_URI.ChartAreas.Add(chartArea1);
+            legend1.Enabled = false;
+            legend1.Name = "Legend1";
+            this.chartFunction_URI.Legends.Add(legend1);
+            this.chartFunction_URI.Location = new System.Drawing.Point(178, 46);
             this.chartFunction_URI.Name = "chartFunction_URI";
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series2.IsVisibleInLegend = false;
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chartFunction_URI.Series.Add(series2);
-            this.chartFunction_URI.Size = new System.Drawing.Size(377, 360);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series1.IsVisibleInLegend = false;
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chartFunction_URI.Series.Add(series1);
+            this.chartFunction_URI.Size = new System.Drawing.Size(382, 360);
             this.chartFunction_URI.TabIndex = 2;
             this.chartFunction_URI.Text = "chart1";
             // 
@@ -163,10 +163,11 @@ namespace Tyuiu.UleevRI.Sprint6.Task2.V3
             this.VarX});
             this.dataGridViewFunction_URI.Location = new System.Drawing.Point(10, 46);
             this.dataGridViewFunction_URI.Name = "dataGridViewFunction_URI";
+            this.dataGridViewFunction_URI.ReadOnly = true;
             this.dataGridViewFunction_URI.RowHeadersVisible = false;
             this.dataGridViewFunction_URI.RowHeadersWidth = 51;
             this.dataGridViewFunction_URI.RowTemplate.Height = 24;
-            this.dataGridViewFunction_URI.Size = new System.Drawing.Size(167, 360);
+            this.dataGridViewFunction_URI.Size = new System.Drawing.Size(162, 360);
             this.dataGridViewFunction_URI.TabIndex = 1;
             // 
             // X
@@ -174,6 +175,7 @@ namespace Tyuiu.UleevRI.Sprint6.Task2.V3
             this.X.HeaderText = "X";
             this.X.MinimumWidth = 6;
             this.X.Name = "X";
+            this.X.ReadOnly = true;
             this.X.Width = 50;
             // 
             // VarX
@@ -181,6 +183,7 @@ namespace Tyuiu.UleevRI.Sprint6.Task2.V3
             this.VarX.HeaderText = "F(X)";
             this.VarX.MinimumWidth = 6;
             this.VarX.Name = "VarX";
+            this.VarX.ReadOnly = true;
             this.VarX.Width = 50;
             // 
             // labelResult_URI
