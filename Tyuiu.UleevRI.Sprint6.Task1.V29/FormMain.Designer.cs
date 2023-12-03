@@ -30,17 +30,17 @@ namespace Tyuiu.UleevRI.Sprint6.Task1.V29
         private void InitializeComponent()
         {
             this.groupBoxInputData_URI = new System.Windows.Forms.GroupBox();
-            this.textBoxVarStart_URI = new System.Windows.Forms.TextBox();
-            this.textBoxVarStop_URI = new System.Windows.Forms.TextBox();
-            this.labelVarStart_URI = new System.Windows.Forms.Label();
             this.labelVarStop_URI = new System.Windows.Forms.Label();
+            this.labelVarStart_URI = new System.Windows.Forms.Label();
+            this.textBoxVarStop_URI = new System.Windows.Forms.TextBox();
+            this.textBoxVarStart_URI = new System.Windows.Forms.TextBox();
             this.groupBoxCondition_URI = new System.Windows.Forms.GroupBox();
             this.textBoxCondition_URI = new System.Windows.Forms.TextBox();
             this.buttonHelp_URI = new System.Windows.Forms.Button();
             this.buttonDone_URI = new System.Windows.Forms.Button();
             this.groupBoxResult_URI = new System.Windows.Forms.GroupBox();
-            this.textBoxResult = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.labelResult_URI = new System.Windows.Forms.Label();
+            this.textBoxResult_URI = new System.Windows.Forms.TextBox();
             this.groupBoxInputData_URI.SuspendLayout();
             this.groupBoxCondition_URI.SuspendLayout();
             this.groupBoxResult_URI.SuspendLayout();
@@ -60,19 +60,14 @@ namespace Tyuiu.UleevRI.Sprint6.Task1.V29
             this.groupBoxInputData_URI.TabStop = false;
             this.groupBoxInputData_URI.Text = "Ввод данных";
             // 
-            // textBoxVarStart_URI
+            // labelVarStop_URI
             // 
-            this.textBoxVarStart_URI.Location = new System.Drawing.Point(7, 58);
-            this.textBoxVarStart_URI.Name = "textBoxVarStart_URI";
-            this.textBoxVarStart_URI.Size = new System.Drawing.Size(131, 24);
-            this.textBoxVarStart_URI.TabIndex = 0;
-            // 
-            // textBoxVarStop_URI
-            // 
-            this.textBoxVarStop_URI.Location = new System.Drawing.Point(158, 56);
-            this.textBoxVarStop_URI.Name = "textBoxVarStop_URI";
-            this.textBoxVarStop_URI.Size = new System.Drawing.Size(131, 24);
-            this.textBoxVarStop_URI.TabIndex = 1;
+            this.labelVarStop_URI.AutoSize = true;
+            this.labelVarStop_URI.Location = new System.Drawing.Point(155, 35);
+            this.labelVarStop_URI.Name = "labelVarStop_URI";
+            this.labelVarStop_URI.Size = new System.Drawing.Size(92, 18);
+            this.labelVarStop_URI.TabIndex = 3;
+            this.labelVarStop_URI.Text = "Конец шага:";
             // 
             // labelVarStart_URI
             // 
@@ -83,14 +78,19 @@ namespace Tyuiu.UleevRI.Sprint6.Task1.V29
             this.labelVarStart_URI.TabIndex = 2;
             this.labelVarStart_URI.Text = "Старт шага:";
             // 
-            // labelVarStop_URI
+            // textBoxVarStop_URI
             // 
-            this.labelVarStop_URI.AutoSize = true;
-            this.labelVarStop_URI.Location = new System.Drawing.Point(155, 35);
-            this.labelVarStop_URI.Name = "labelVarStop_URI";
-            this.labelVarStop_URI.Size = new System.Drawing.Size(92, 18);
-            this.labelVarStop_URI.TabIndex = 3;
-            this.labelVarStop_URI.Text = "Конец шага:";
+            this.textBoxVarStop_URI.Location = new System.Drawing.Point(158, 56);
+            this.textBoxVarStop_URI.Name = "textBoxVarStop_URI";
+            this.textBoxVarStop_URI.Size = new System.Drawing.Size(131, 24);
+            this.textBoxVarStop_URI.TabIndex = 1;
+            // 
+            // textBoxVarStart_URI
+            // 
+            this.textBoxVarStart_URI.Location = new System.Drawing.Point(7, 58);
+            this.textBoxVarStart_URI.Name = "textBoxVarStart_URI";
+            this.textBoxVarStart_URI.Size = new System.Drawing.Size(131, 24);
+            this.textBoxVarStart_URI.TabIndex = 0;
             // 
             // groupBoxCondition_URI
             // 
@@ -140,8 +140,8 @@ namespace Tyuiu.UleevRI.Sprint6.Task1.V29
             // 
             // groupBoxResult_URI
             // 
-            this.groupBoxResult_URI.Controls.Add(this.label2);
-            this.groupBoxResult_URI.Controls.Add(this.textBoxResult);
+            this.groupBoxResult_URI.Controls.Add(this.labelResult_URI);
+            this.groupBoxResult_URI.Controls.Add(this.textBoxResult_URI);
             this.groupBoxResult_URI.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.groupBoxResult_URI.Location = new System.Drawing.Point(543, 24);
             this.groupBoxResult_URI.Name = "groupBoxResult_URI";
@@ -150,26 +150,26 @@ namespace Tyuiu.UleevRI.Sprint6.Task1.V29
             this.groupBoxResult_URI.TabStop = false;
             this.groupBoxResult_URI.Text = "Вывод данных";
             // 
-            // textBoxResult
+            // labelResult_URI
             // 
-            this.textBoxResult.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxResult.Location = new System.Drawing.Point(7, 46);
-            this.textBoxResult.Multiline = true;
-            this.textBoxResult.Name = "textBoxResult";
-            this.textBoxResult.ReadOnly = true;
-            this.textBoxResult.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBoxResult.Size = new System.Drawing.Size(381, 344);
-            this.textBoxResult.TabIndex = 0;
+            this.labelResult_URI.AutoSize = true;
+            this.labelResult_URI.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelResult_URI.Location = new System.Drawing.Point(7, 22);
+            this.labelResult_URI.Name = "labelResult_URI";
+            this.labelResult_URI.Size = new System.Drawing.Size(84, 18);
+            this.labelResult_URI.TabIndex = 1;
+            this.labelResult_URI.Text = "Результат:";
             // 
-            // label2
+            // textBoxResult_URI
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(7, 22);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(84, 18);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Результат:";
+            this.textBoxResult_URI.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxResult_URI.Location = new System.Drawing.Point(7, 46);
+            this.textBoxResult_URI.Multiline = true;
+            this.textBoxResult_URI.Name = "textBoxResult_URI";
+            this.textBoxResult_URI.ReadOnly = true;
+            this.textBoxResult_URI.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBoxResult_URI.Size = new System.Drawing.Size(381, 344);
+            this.textBoxResult_URI.TabIndex = 0;
             // 
             // FormMain
             // 
@@ -207,8 +207,8 @@ namespace Tyuiu.UleevRI.Sprint6.Task1.V29
         private System.Windows.Forms.Button buttonHelp_URI;
         private System.Windows.Forms.Button buttonDone_URI;
         private System.Windows.Forms.GroupBox groupBoxResult_URI;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBoxResult;
+        private System.Windows.Forms.Label labelResult_URI;
+        private System.Windows.Forms.TextBox textBoxResult_URI;
     }
 }
 

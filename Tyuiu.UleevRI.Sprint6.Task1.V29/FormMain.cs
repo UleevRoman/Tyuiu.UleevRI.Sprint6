@@ -34,17 +34,17 @@ namespace Tyuiu.UleevRI.Sprint6.Task1.V29
                 int l = ds.GetMassFunction(startValue, stopValue).Length;
                 double[] num = new double[l];
                 num = ds.GetMassFunction(startValue, stopValue);
-                textBoxResult.Text = "";
-                textBoxResult.AppendText("+----------+----------+" + Environment.NewLine);
-                textBoxResult.AppendText("|    x     |   f(x)   |" + Environment.NewLine);
-                textBoxResult.AppendText("+----------+----------+" + Environment.NewLine);
+                textBoxResult_URI.Text = "";
+                textBoxResult_URI.AppendText("+----------+----------+" + Environment.NewLine);
+                textBoxResult_URI.AppendText("|    x     |   f(x)   |" + Environment.NewLine);
+                textBoxResult_URI.AppendText("+----------+----------+" + Environment.NewLine);
                 for (int i = 0; i <= l - 1; i++)
                 {
                     str = String.Format("|{0,5:d}     | {1,6:f2}   |", startValue, num[i]);
-                    textBoxResult.AppendText(str + Environment.NewLine);
+                    textBoxResult_URI.AppendText(str + Environment.NewLine);
                     startValue++;
                 }
-                textBoxResult.AppendText("+----------+----------+" + Environment.NewLine);
+                textBoxResult_URI.AppendText("+----------+----------+" + Environment.NewLine);
             }
             catch
             {
