@@ -141,7 +141,7 @@ namespace Tyuiu.UleevRI.Sprint6.Task0.V26
             // pictureBoxFormula_URI
             // 
             this.pictureBoxFormula_URI.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxFormula_URI.Image")));
-            this.pictureBoxFormula_URI.Location = new System.Drawing.Point(517, 21);
+            this.pictureBoxFormula_URI.Location = new System.Drawing.Point(523, 21);
             this.pictureBoxFormula_URI.Name = "pictureBoxFormula_URI";
             this.pictureBoxFormula_URI.Size = new System.Drawing.Size(229, 128);
             this.pictureBoxFormula_URI.TabIndex = 1;
