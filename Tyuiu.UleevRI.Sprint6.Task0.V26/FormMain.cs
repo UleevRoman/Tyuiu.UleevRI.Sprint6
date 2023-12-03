@@ -28,7 +28,7 @@ namespace Tyuiu.UleevRI.Sprint6.Task0.V26
             DataService ds = new DataService();
             try
             {
-                textBoxResult.Text = Convert.ToString(ds.Calculate(Convert.ToInt32(textBoxVarX_URI.Text)));
+                textBoxResult_URI.Text = Convert.ToString(ds.Calculate(Convert.ToInt32(textBoxVarX_URI.Text)));
             }
             catch
             {
