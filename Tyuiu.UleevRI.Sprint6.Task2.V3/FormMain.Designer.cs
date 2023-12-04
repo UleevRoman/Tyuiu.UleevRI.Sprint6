@@ -61,9 +61,9 @@ namespace Tyuiu.UleevRI.Sprint6.Task2.V3
             this.groupBoxInputData_URI.Controls.Add(this.textBoxStop_URI);
             this.groupBoxInputData_URI.Controls.Add(this.textBoxStart_URI);
             this.groupBoxInputData_URI.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.groupBoxInputData_URI.Location = new System.Drawing.Point(13, 350);
+            this.groupBoxInputData_URI.Location = new System.Drawing.Point(13, 249);
             this.groupBoxInputData_URI.Name = "groupBoxInputData_URI";
-            this.groupBoxInputData_URI.Size = new System.Drawing.Size(243, 88);
+            this.groupBoxInputData_URI.Size = new System.Drawing.Size(453, 88);
             this.groupBoxInputData_URI.TabIndex = 0;
             this.groupBoxInputData_URI.TabStop = false;
             this.groupBoxInputData_URI.Text = "Ввод данных";
@@ -71,7 +71,7 @@ namespace Tyuiu.UleevRI.Sprint6.Task2.V3
             // labelStop_URI
             // 
             this.labelStop_URI.AutoSize = true;
-            this.labelStop_URI.Location = new System.Drawing.Point(128, 38);
+            this.labelStop_URI.Location = new System.Drawing.Point(313, 38);
             this.labelStop_URI.Name = "labelStop_URI";
             this.labelStop_URI.Size = new System.Drawing.Size(92, 18);
             this.labelStop_URI.TabIndex = 3;
@@ -81,7 +81,7 @@ namespace Tyuiu.UleevRI.Sprint6.Task2.V3
             // 
             this.labelStart_URI.AutoSize = true;
             this.labelStart_URI.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelStart_URI.Location = new System.Drawing.Point(6, 38);
+            this.labelStart_URI.Location = new System.Drawing.Point(59, 38);
             this.labelStart_URI.Name = "labelStart_URI";
             this.labelStart_URI.Size = new System.Drawing.Size(90, 18);
             this.labelStart_URI.TabIndex = 2;
@@ -89,16 +89,16 @@ namespace Tyuiu.UleevRI.Sprint6.Task2.V3
             // 
             // textBoxStop_URI
             // 
-            this.textBoxStop_URI.Location = new System.Drawing.Point(131, 59);
+            this.textBoxStop_URI.Location = new System.Drawing.Point(262, 59);
             this.textBoxStop_URI.Name = "textBoxStop_URI";
-            this.textBoxStop_URI.Size = new System.Drawing.Size(100, 24);
+            this.textBoxStop_URI.Size = new System.Drawing.Size(185, 24);
             this.textBoxStop_URI.TabIndex = 1;
             // 
             // textBoxStart_URI
             // 
             this.textBoxStart_URI.Location = new System.Drawing.Point(7, 59);
             this.textBoxStart_URI.Name = "textBoxStart_URI";
-            this.textBoxStart_URI.Size = new System.Drawing.Size(100, 24);
+            this.textBoxStart_URI.Size = new System.Drawing.Size(189, 24);
             this.textBoxStart_URI.TabIndex = 0;
             // 
             // groupBoxCondition_URI
@@ -107,7 +107,7 @@ namespace Tyuiu.UleevRI.Sprint6.Task2.V3
             this.groupBoxCondition_URI.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.groupBoxCondition_URI.Location = new System.Drawing.Point(13, 24);
             this.groupBoxCondition_URI.Name = "groupBoxCondition_URI";
-            this.groupBoxCondition_URI.Size = new System.Drawing.Size(453, 306);
+            this.groupBoxCondition_URI.Size = new System.Drawing.Size(453, 219);
             this.groupBoxCondition_URI.TabIndex = 1;
             this.groupBoxCondition_URI.TabStop = false;
             this.groupBoxCondition_URI.Text = "Условие";
@@ -118,7 +118,7 @@ namespace Tyuiu.UleevRI.Sprint6.Task2.V3
             this.textBoxCondition_URI.Multiline = true;
             this.textBoxCondition_URI.Name = "textBoxCondition_URI";
             this.textBoxCondition_URI.ReadOnly = true;
-            this.textBoxCondition_URI.Size = new System.Drawing.Size(438, 248);
+            this.textBoxCondition_URI.Size = new System.Drawing.Size(438, 120);
             this.textBoxCondition_URI.TabIndex = 0;
             this.textBoxCondition_URI.Text = "Протабулировать функцию F(x) = sin(x)/(x+1,2) + cos(x)*7x - 2 на заданном диапозо" +
     "не.\r\nРезультат вывести в DataGirdView и построить график функции.";
@@ -199,9 +199,9 @@ namespace Tyuiu.UleevRI.Sprint6.Task2.V3
             // 
             this.buttonHelp_URI.BackColor = System.Drawing.Color.Fuchsia;
             this.buttonHelp_URI.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonHelp_URI.Location = new System.Drawing.Point(262, 356);
+            this.buttonHelp_URI.Location = new System.Drawing.Point(20, 356);
             this.buttonHelp_URI.Name = "buttonHelp_URI";
-            this.buttonHelp_URI.Size = new System.Drawing.Size(86, 80);
+            this.buttonHelp_URI.Size = new System.Drawing.Size(189, 80);
             this.buttonHelp_URI.TabIndex = 3;
             this.buttonHelp_URI.Text = "Справка";
             this.buttonHelp_URI.UseVisualStyleBackColor = false;
@@ -211,9 +211,9 @@ namespace Tyuiu.UleevRI.Sprint6.Task2.V3
             // 
             this.buttonDone_URI.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.buttonDone_URI.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonDone_URI.Location = new System.Drawing.Point(346, 356);
+            this.buttonDone_URI.Location = new System.Drawing.Point(275, 356);
             this.buttonDone_URI.Name = "buttonDone_URI";
-            this.buttonDone_URI.Size = new System.Drawing.Size(121, 80);
+            this.buttonDone_URI.Size = new System.Drawing.Size(185, 80);
             this.buttonDone_URI.TabIndex = 4;
             this.buttonDone_URI.Text = "Выполнить";
             this.buttonDone_URI.UseVisualStyleBackColor = false;
