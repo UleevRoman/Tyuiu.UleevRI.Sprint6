@@ -15,7 +15,7 @@ namespace Tyuiu.UleevRI.Sprint6.Task1.V29.Test
             int stopValue = 5;
             int l = stopValue - startValue + 1;
             double[] num = new double[l];
-            num[0] = -15.44;
+            num[0] = -15.40;
             num[1] = -10.93;
             num[2] = -7.22;
             num[3] = -5.04;

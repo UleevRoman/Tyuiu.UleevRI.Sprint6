@@ -16,7 +16,7 @@ namespace Tyuiu.UleevRI.Sprint6.Task1.V29.Lib
             double m; int r = 0;
             for (int i = startValue; i <= stopValue; i++)
             {
-                if (i == -1) m = 0;
+                if (i == -1) m = 1;
                 else m = Math.Round(Math.Cos(i) / (i + 1) - Math.Cos(i) * 1.3 + 3 * i, 2);
                 num[r] = m;
                 r++;
