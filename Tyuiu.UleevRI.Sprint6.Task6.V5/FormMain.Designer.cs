@@ -40,6 +40,7 @@ namespace Tyuiu.UleevRI.Sprint6.Task6.V5
             this.textBoxCondition_URI = new System.Windows.Forms.TextBox();
             this.panelInputData_URI = new System.Windows.Forms.Panel();
             this.groupBox_URI = new System.Windows.Forms.GroupBox();
+            this.splitter1 = new System.Windows.Forms.Splitter();
             this.textBoxLoadFile_URI = new System.Windows.Forms.TextBox();
             this.panelResult_URI = new System.Windows.Forms.Panel();
             this.groupBoxСonclusion_URI = new System.Windows.Forms.GroupBox();
@@ -47,7 +48,6 @@ namespace Tyuiu.UleevRI.Sprint6.Task6.V5
             this.toolTipOpenFile_URI = new System.Windows.Forms.ToolTip(this.components);
             this.openFileDialogTask = new System.Windows.Forms.OpenFileDialog();
             this.toolTipDone_URI = new System.Windows.Forms.ToolTip(this.components);
-            this.splitter1 = new System.Windows.Forms.Splitter();
             this.toolTipHelp_URI = new System.Windows.Forms.ToolTip(this.components);
             this.panelFile_URI.SuspendLayout();
             this.panelCondition_URI.SuspendLayout();
@@ -73,9 +73,9 @@ namespace Tyuiu.UleevRI.Sprint6.Task6.V5
             // 
             this.buttonHelp_URI.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonHelp_URI.Image = ((System.Drawing.Image)(resources.GetObject("buttonHelp_URI.Image")));
-            this.buttonHelp_URI.Location = new System.Drawing.Point(994, 15);
+            this.buttonHelp_URI.Location = new System.Drawing.Point(986, 15);
             this.buttonHelp_URI.Name = "buttonHelp_URI";
-            this.buttonHelp_URI.Size = new System.Drawing.Size(102, 74);
+            this.buttonHelp_URI.Size = new System.Drawing.Size(110, 74);
             this.buttonHelp_URI.TabIndex = 2;
             this.toolTipHelp_URI.SetToolTip(this.buttonHelp_URI, "О программе");
             this.buttonHelp_URI.UseVisualStyleBackColor = true;
@@ -85,9 +85,9 @@ namespace Tyuiu.UleevRI.Sprint6.Task6.V5
             // 
             this.buttonDone_URI.BackColor = System.Drawing.Color.Silver;
             this.buttonDone_URI.Image = ((System.Drawing.Image)(resources.GetObject("buttonDone_URI.Image")));
-            this.buttonDone_URI.Location = new System.Drawing.Point(148, 15);
+            this.buttonDone_URI.Location = new System.Drawing.Point(150, 15);
             this.buttonDone_URI.Name = "buttonDone_URI";
-            this.buttonDone_URI.Size = new System.Drawing.Size(102, 74);
+            this.buttonDone_URI.Size = new System.Drawing.Size(105, 74);
             this.buttonDone_URI.TabIndex = 1;
             this.toolTipDone_URI.SetToolTip(this.buttonDone_URI, "Нажмите, чтобы продолжить");
             this.buttonDone_URI.UseVisualStyleBackColor = false;
@@ -99,7 +99,7 @@ namespace Tyuiu.UleevRI.Sprint6.Task6.V5
             this.buttonOpenFile_URI.Image = ((System.Drawing.Image)(resources.GetObject("buttonOpenFile_URI.Image")));
             this.buttonOpenFile_URI.Location = new System.Drawing.Point(25, 15);
             this.buttonOpenFile_URI.Name = "buttonOpenFile_URI";
-            this.buttonOpenFile_URI.Size = new System.Drawing.Size(99, 74);
+            this.buttonOpenFile_URI.Size = new System.Drawing.Size(104, 74);
             this.buttonOpenFile_URI.TabIndex = 0;
             this.toolTipOpenFile_URI.SetToolTip(this.buttonOpenFile_URI, "Открыть файл\r\nВыберите нужный файл для обработки");
             this.buttonOpenFile_URI.UseVisualStyleBackColor = false;
@@ -157,6 +157,15 @@ namespace Tyuiu.UleevRI.Sprint6.Task6.V5
             this.groupBox_URI.TabStop = false;
             this.groupBox_URI.Text = "Ввод данных:";
             // 
+            // splitter1
+            // 
+            this.splitter1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.splitter1.Location = new System.Drawing.Point(538, 20);
+            this.splitter1.Name = "splitter1";
+            this.splitter1.Size = new System.Drawing.Size(3, 432);
+            this.splitter1.TabIndex = 1;
+            this.splitter1.TabStop = false;
+            // 
             // textBoxLoadFile_URI
             // 
             this.textBoxLoadFile_URI.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -208,15 +217,6 @@ namespace Tyuiu.UleevRI.Sprint6.Task6.V5
             // 
             this.toolTipDone_URI.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             this.toolTipDone_URI.ToolTipTitle = "Подсказка";
-            // 
-            // splitter1
-            // 
-            this.splitter1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.splitter1.Location = new System.Drawing.Point(538, 20);
-            this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(3, 432);
-            this.splitter1.TabIndex = 1;
-            this.splitter1.TabStop = false;
             // 
             // toolTipHelp_URI
             // 
