@@ -25,7 +25,7 @@ namespace Tyuiu.UleevRI.Sprint6.Task5.V9.Lib
             int r = 0;
             using (StreamReader reader = new StreamReader(path))
             {
-                string line; 
+                string line;
                 while ((line = reader.ReadLine()) != null)
                 {
                     num[r] = Convert.ToDouble(line);
