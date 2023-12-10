@@ -30,6 +30,7 @@ namespace Tyuiu.UleevRI.Sprint6.Task5.V9
             chartFunction_URI.Series[0].Points.Clear();
             double[] num = new double[ds.len];
             num = ds.LoadFromDataFile(path);
+            //
             for (int i = 0; i < num.Length; i++)
             {
                 dataGridViewResult_URI.Rows.Add(Convert.ToString(i), Convert.ToString(num[i]));

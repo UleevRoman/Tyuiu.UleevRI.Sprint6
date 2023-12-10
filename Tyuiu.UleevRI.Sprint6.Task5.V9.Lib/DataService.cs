@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 using tyuiu.cources.programming.interfaces.Sprint6;
-
+//
 namespace Tyuiu.UleevRI.Sprint6.Task5.V9.Lib
 {
     public class DataService : ISprint6Task5V9
