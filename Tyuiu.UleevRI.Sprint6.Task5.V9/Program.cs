@@ -16,7 +16,7 @@ namespace Tyuiu.UleevRI.Sprint6.Task5.V9
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormMain())
+            Application.Run(new FormMain());
         }
     }
 }
