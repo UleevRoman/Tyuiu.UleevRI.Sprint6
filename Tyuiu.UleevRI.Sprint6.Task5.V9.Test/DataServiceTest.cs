@@ -12,7 +12,7 @@ namespace Tyuiu.UleevRI.Sprint6.Task5.V9.Test
         public void TestMethod1()
         {
             DataService ds = new DataService();
-            string path = @"C:\DataSprint6\InPutDataFileTask5V9.txt";
+            string path = @"C:\DataSprint6\InPutFileTask5V9.txt";
             FileInfo fileInfo = new FileInfo(path);
             bool fileExists = fileInfo.Exists;
             Assert.AreEqual(true, fileExists);
