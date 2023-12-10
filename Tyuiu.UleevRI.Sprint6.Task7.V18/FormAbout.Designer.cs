@@ -65,6 +65,7 @@ namespace Tyuiu.UleevRI.Sprint6.Task7.V18
             this.buttonOK_URI.TabIndex = 3;
             this.buttonOK_URI.Text = "ОК";
             this.buttonOK_URI.UseVisualStyleBackColor = false;
+            this.buttonOK_URI.Click += new System.EventHandler(this.buttonOK_URI_Click);
             // 
             // FormAbout
             // 

@@ -16,5 +16,10 @@ namespace Tyuiu.UleevRI.Sprint6.Task7.V18
         {
             InitializeComponent();
         }
+
+        private void buttonOK_URI_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

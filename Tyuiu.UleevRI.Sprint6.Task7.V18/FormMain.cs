@@ -50,36 +50,7 @@ namespace Tyuiu.UleevRI.Sprint6.Task7.V18
             }
             return array;
         }
-        private void buttonOpenFile_URI_Click(object sender, EventArgs e)
-        {
-            openFileDialogTask_URI.ShowDialog();
-            openFile = openFileDialogTask_URI.FileName;
-            int[,] matrix = new int[rows, columns];
-            matrix = LoadFromData(openFile);
-
-            dataGridViewInMatrix_URI.RowCount = rows;
-            dataGridViewInMatrix_URI.ColumnCount = columns;
-            dataGridViewOutMatrix_URI.RowCount = rows;
-            dataGridViewOutMatrix_URI.ColumnCount = columns;
-
-
-            for (int i = 0; i < columns; i++)
-            {
-                dataGridViewInMatrix_URI.Columns[i].Width = 50;
-                dataGridViewOutMatrix_URI.Columns[i].Width = 50;
-            }
-
-            for (int r = 0; r < rows; r++)
-            {
-                for (int c = 0; c < columns; c++)
-                {
-                    dataGridViewInMatrix_URI.Rows[r].Cells[c].Value = matrix[r, c];
-                }
-            }
-            matrix = ds.GetMatrix(LoadFromData(openFile));
-            buttonDone_URI.Enabled = true;
-        }
-
+       
         private void buttonDone_URI_Click(object sender, EventArgs e)
         {
             int[,] matrix = new int[rows, columns];
@@ -126,7 +97,34 @@ namespace Tyuiu.UleevRI.Sprint6.Task7.V18
                 str = "";
             }
         }
+        private void buttonOpenFile_URI_Click(object sender, EventArgs e)
+        {
+            openFileDialogTask_URI.ShowDialog();
+            openFile = openFileDialogTask_URI.FileName;
+            int[,] matrix = new int[rows, columns];
+            matrix = LoadFromData(openFile);
 
-        
+            dataGridViewInMatrix_URI.RowCount = rows;
+            dataGridViewInMatrix_URI.ColumnCount = columns;
+            dataGridViewOutMatrix_URI.RowCount = rows;
+            dataGridViewOutMatrix_URI.ColumnCount = columns;
+
+
+            for (int i = 0; i < columns; i++)
+            {
+                dataGridViewInMatrix_URI.Columns[i].Width = 50;
+                dataGridViewOutMatrix_URI.Columns[i].Width = 50;
+            }
+
+            for (int r = 0; r < rows; r++)
+            {
+                for (int c = 0; c < columns; c++)
+                {
+                    dataGridViewInMatrix_URI.Rows[r].Cells[c].Value = matrix[r, c];
+                }
+            }
+            matrix = ds.GetMatrix(LoadFromData(openFile));
+            buttonDone_URI.Enabled = true;
+        }
     }
 }
