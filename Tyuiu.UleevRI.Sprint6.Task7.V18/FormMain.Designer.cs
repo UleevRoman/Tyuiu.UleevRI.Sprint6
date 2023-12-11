@@ -51,6 +51,7 @@ namespace Tyuiu.UleevRI.Sprint6.Task7.V18
             this.toolTipOpenFile_URI = new System.Windows.Forms.ToolTip(this.components);
             this.toolTipDone_URI = new System.Windows.Forms.ToolTip(this.components);
             this.toolTipSaveFile_URI = new System.Windows.Forms.ToolTip(this.components);
+            this.toolTipHelp_URI = new System.Windows.Forms.ToolTip(this.components);
             this.panelFile_URI.SuspendLayout();
             this.panelCondition_URI.SuspendLayout();
             this.groupBoxCondition_URI.SuspendLayout();
@@ -86,6 +87,7 @@ namespace Tyuiu.UleevRI.Sprint6.Task7.V18
             this.toolTipSaveFile_URI.SetToolTip(this.buttonSaveFile_URI, "Выберите папку, где сохранить файл");
             this.buttonSaveFile_URI.UseVisualStyleBackColor = false;
             this.buttonSaveFile_URI.Click += new System.EventHandler(this.buttonSaveFile_URI_Click);
+            this.buttonSaveFile_URI.MouseEnter += new System.EventHandler(this.buttonSaveFile_URI_MouseEnter);
             // 
             // buttonDone_URI
             // 
@@ -96,9 +98,10 @@ namespace Tyuiu.UleevRI.Sprint6.Task7.V18
             this.buttonDone_URI.Name = "buttonDone_URI";
             this.buttonDone_URI.Size = new System.Drawing.Size(101, 69);
             this.buttonDone_URI.TabIndex = 2;
-            this.toolTipDone_URI.SetToolTip(this.buttonDone_URI, "Выполнить\r\nЧтобы продолжить, нажмите на эту кнопку");
+            this.toolTipDone_URI.SetToolTip(this.buttonDone_URI, "Чтобы продолжить (выполнить), нажмите на эту кнопку");
             this.buttonDone_URI.UseVisualStyleBackColor = false;
             this.buttonDone_URI.Click += new System.EventHandler(this.buttonDone_URI_Click);
+            this.buttonDone_URI.MouseEnter += new System.EventHandler(this.buttonDone_URI_MouseEnter);
             // 
             // buttonHelp_URI
             // 
@@ -109,6 +112,7 @@ namespace Tyuiu.UleevRI.Sprint6.Task7.V18
             this.buttonHelp_URI.Name = "buttonHelp_URI";
             this.buttonHelp_URI.Size = new System.Drawing.Size(94, 69);
             this.buttonHelp_URI.TabIndex = 1;
+            this.toolTipHelp_URI.SetToolTip(this.buttonHelp_URI, "О программе");
             this.buttonHelp_URI.UseVisualStyleBackColor = true;
             this.buttonHelp_URI.Click += new System.EventHandler(this.buttonHelp_URI_Click);
             // 
@@ -121,9 +125,10 @@ namespace Tyuiu.UleevRI.Sprint6.Task7.V18
             this.buttonOpenFile_URI.Name = "buttonOpenFile_URI";
             this.buttonOpenFile_URI.Size = new System.Drawing.Size(105, 69);
             this.buttonOpenFile_URI.TabIndex = 0;
-            this.toolTipOpenFile_URI.SetToolTip(this.buttonOpenFile_URI, "Открыть файл\r\nВыберите нужный файл для обработки данных");
+            this.toolTipOpenFile_URI.SetToolTip(this.buttonOpenFile_URI, "Выберите нужный файл для обработки данных");
             this.buttonOpenFile_URI.UseVisualStyleBackColor = false;
             this.buttonOpenFile_URI.Click += new System.EventHandler(this.buttonOpenFile_URI_Click);
+            this.buttonOpenFile_URI.MouseEnter += new System.EventHandler(this.buttonOpenFile_URI_MouseEnter);
             // 
             // panelCondition_URI
             // 
@@ -160,7 +165,7 @@ namespace Tyuiu.UleevRI.Sprint6.Task7.V18
             this.panelData_URI.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelData_URI.Location = new System.Drawing.Point(0, 205);
             this.panelData_URI.Name = "panelData_URI";
-            this.panelData_URI.Size = new System.Drawing.Size(546, 548);
+            this.panelData_URI.Size = new System.Drawing.Size(543, 548);
             this.panelData_URI.TabIndex = 2;
             // 
             // groupBoxInput_URI
@@ -169,7 +174,7 @@ namespace Tyuiu.UleevRI.Sprint6.Task7.V18
             this.groupBoxInput_URI.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBoxInput_URI.Location = new System.Drawing.Point(0, 0);
             this.groupBoxInput_URI.Name = "groupBoxInput_URI";
-            this.groupBoxInput_URI.Size = new System.Drawing.Size(546, 548);
+            this.groupBoxInput_URI.Size = new System.Drawing.Size(543, 548);
             this.groupBoxInput_URI.TabIndex = 0;
             this.groupBoxInput_URI.TabStop = false;
             this.groupBoxInput_URI.Text = "Ввод:";
@@ -181,19 +186,21 @@ namespace Tyuiu.UleevRI.Sprint6.Task7.V18
             this.dataGridViewInMatrix_URI.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewInMatrix_URI.Location = new System.Drawing.Point(3, 18);
             this.dataGridViewInMatrix_URI.Name = "dataGridViewInMatrix_URI";
+            this.dataGridViewInMatrix_URI.ReadOnly = true;
             this.dataGridViewInMatrix_URI.RowHeadersVisible = false;
             this.dataGridViewInMatrix_URI.RowHeadersWidth = 51;
             this.dataGridViewInMatrix_URI.RowTemplate.Height = 24;
-            this.dataGridViewInMatrix_URI.Size = new System.Drawing.Size(540, 527);
+            this.dataGridViewInMatrix_URI.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
+            this.dataGridViewInMatrix_URI.Size = new System.Drawing.Size(537, 527);
             this.dataGridViewInMatrix_URI.TabIndex = 0;
             // 
             // panelResult_URI
             // 
             this.panelResult_URI.Controls.Add(this.groupBoxOutput_URI);
             this.panelResult_URI.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelResult_URI.Location = new System.Drawing.Point(546, 205);
+            this.panelResult_URI.Location = new System.Drawing.Point(543, 205);
             this.panelResult_URI.Name = "panelResult_URI";
-            this.panelResult_URI.Size = new System.Drawing.Size(639, 548);
+            this.panelResult_URI.Size = new System.Drawing.Size(642, 548);
             this.panelResult_URI.TabIndex = 3;
             // 
             // groupBoxOutput_URI
@@ -202,7 +209,7 @@ namespace Tyuiu.UleevRI.Sprint6.Task7.V18
             this.groupBoxOutput_URI.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBoxOutput_URI.Location = new System.Drawing.Point(0, 0);
             this.groupBoxOutput_URI.Name = "groupBoxOutput_URI";
-            this.groupBoxOutput_URI.Size = new System.Drawing.Size(639, 548);
+            this.groupBoxOutput_URI.Size = new System.Drawing.Size(642, 548);
             this.groupBoxOutput_URI.TabIndex = 0;
             this.groupBoxOutput_URI.TabStop = false;
             this.groupBoxOutput_URI.Text = "Вывод:";
@@ -214,15 +221,17 @@ namespace Tyuiu.UleevRI.Sprint6.Task7.V18
             this.dataGridViewOutMatrix_URI.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewOutMatrix_URI.Location = new System.Drawing.Point(3, 18);
             this.dataGridViewOutMatrix_URI.Name = "dataGridViewOutMatrix_URI";
+            this.dataGridViewOutMatrix_URI.ReadOnly = true;
             this.dataGridViewOutMatrix_URI.RowHeadersVisible = false;
             this.dataGridViewOutMatrix_URI.RowHeadersWidth = 51;
             this.dataGridViewOutMatrix_URI.RowTemplate.Height = 24;
-            this.dataGridViewOutMatrix_URI.Size = new System.Drawing.Size(633, 527);
+            this.dataGridViewOutMatrix_URI.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
+            this.dataGridViewOutMatrix_URI.Size = new System.Drawing.Size(636, 527);
             this.dataGridViewOutMatrix_URI.TabIndex = 0;
             // 
             // splitterResult_URI
             // 
-            this.splitterResult_URI.Location = new System.Drawing.Point(546, 205);
+            this.splitterResult_URI.Location = new System.Drawing.Point(543, 205);
             this.splitterResult_URI.Name = "splitterResult_URI";
             this.splitterResult_URI.Size = new System.Drawing.Size(10, 548);
             this.splitterResult_URI.TabIndex = 4;
@@ -235,22 +244,27 @@ namespace Tyuiu.UleevRI.Sprint6.Task7.V18
             // toolTipOpenFile_URI
             // 
             this.toolTipOpenFile_URI.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
-            this.toolTipOpenFile_URI.ToolTipTitle = "Подсказка";
+            this.toolTipOpenFile_URI.ToolTipTitle = "Выберать файл";
             // 
             // toolTipDone_URI
             // 
             this.toolTipDone_URI.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
-            this.toolTipDone_URI.ToolTipTitle = "Подсказка";
+            this.toolTipDone_URI.ToolTipTitle = "Выполнить";
             // 
             // toolTipSaveFile_URI
             // 
             this.toolTipSaveFile_URI.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
-            this.toolTipSaveFile_URI.ToolTipTitle = "Подсказка";
+            this.toolTipSaveFile_URI.ToolTipTitle = "Сохранить файл";
+            // 
+            // toolTipHelp_URI
+            // 
+            this.toolTipHelp_URI.ToolTipTitle = "Справка";
             // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1185, 753);
             this.Controls.Add(this.splitterResult_URI);
             this.Controls.Add(this.panelResult_URI);
@@ -298,6 +312,7 @@ namespace Tyuiu.UleevRI.Sprint6.Task7.V18
         private System.Windows.Forms.ToolTip toolTipOpenFile_URI;
         private System.Windows.Forms.ToolTip toolTipDone_URI;
         private System.Windows.Forms.ToolTip toolTipSaveFile_URI;
+        private System.Windows.Forms.ToolTip toolTipHelp_URI;
     }
 }
 

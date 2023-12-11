@@ -126,5 +126,20 @@ namespace Tyuiu.UleevRI.Sprint6.Task7.V18
             matrix = ds.GetMatrix(LoadFromData(openFile));
             buttonDone_URI.Enabled = true;
         }
+
+        private void buttonOpenFile_URI_MouseEnter(object sender, EventArgs e)
+        {
+            toolTipOpenFile_URI.ToolTipTitle = "Открыть файл";
+        }
+
+        private void buttonDone_URI_MouseEnter(object sender, EventArgs e)
+        {
+            toolTipOpenFile_URI.ToolTipTitle = "Выполнить";
+        }
+
+        private void buttonSaveFile_URI_MouseEnter(object sender, EventArgs e)
+        {
+            toolTipOpenFile_URI.ToolTipTitle = "Сохранить в файл";
+        }
     }
 }
